@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
-import Questions from "./../../containers/Questions";
+import Questions from "../../containers/Questions";
 
-export default function TakeQuiz() {
+export default function Quiz() {
   return (
     <>
       <div className="container">

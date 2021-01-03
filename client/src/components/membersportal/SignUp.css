@@ -80,7 +80,7 @@
 }
 
 .FormField {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .FormField__Label {
@@ -88,6 +88,8 @@
   text-transform: uppercase;
   font-size: .9em;
   color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 .FormField__Input {
   width: 85%;
@@ -104,17 +106,6 @@
 
 .FormField__Input::placeholder {
   color: #3C3C6C;
-}
-
-.FormField__Button {
-  background-color: #3C3C6C;
-  color: white;
-  border: none;
-  outline: none;
-  border-radius: 25px;
-  padding: 15px 70px;
-  font-size: .8em;
-  font-weight: 500;
 }
 
 .FormField__Link {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
+import { Button } from '../button/Button';
+
 
 
 class SignUpForm extends Component {
@@ -59,7 +61,14 @@ class SignUpForm extends Component {
               </div>
 
               <div className="FormField">
-                  <button className="FormField__Button mr-20">Sign Up</button> <Link to="/sign-in" className="FormField__Link">I'm already member</Link>
+                <Button
+                className='btns'
+                buttonStyle='btn--form'
+                buttonSize='btn--large'
+                >
+                  Sign Up
+                </Button> 
+                <Link to="/sign-in" className="FormField__Link">I'm already member</Link>
               </div>
             </form>
           </div>
