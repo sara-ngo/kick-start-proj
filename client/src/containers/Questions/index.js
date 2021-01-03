@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ChoiceList from "./../../components/ChoiceList";
 import { Link } from 'react-router-dom';
 import GoBackBtn from "./../../components/GoBackBtn";
+import './index.css';
 
 export default function Questions() {
     const questions = [
@@ -372,7 +373,7 @@ export default function Questions() {
     }
     return (
         <>
-            <div className="container mt-5" >
+            <div className="container" >
                 <div className="card text-white mb-3 ps-3 pt-3" style={{ backgroundColor: "rgb(60, 60, 108)" }}>
                     {end ?
                         <div>

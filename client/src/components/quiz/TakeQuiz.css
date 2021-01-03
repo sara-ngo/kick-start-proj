@@ -1,19 +1,29 @@
 .container {
     background-color: #8585A4;
-    height: 90vh;
-    width: 100%;
+    height: 100vh;
+    padding: 4rem 0 4rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: max-content;
-
+    max-width: 1800px;
 }
 
 .text-start > h2 {
     color: #3C3C3D;
+    font-size: 20px;
+    max-width: 1000px;
+    text-align: center;
 }
 
 .text-center {
     color: #000;
+}
+
+@media screen and (max-width: 960px) {
+  .text-start > h2 { 
+    text-align: center;
+    margin: 2rem;
+  }
+  
 }

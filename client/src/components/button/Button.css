@@ -60,3 +60,10 @@
   color: #242424;
   transition: 250ms;
 }
+
+
+@media screen and (max-width: 960px) {
+  .btn--goback {
+    margin: 20px 0 20px 0;
+  }
+}

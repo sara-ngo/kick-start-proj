@@ -59,7 +59,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Disscussion
+                Discussion
               </Link>
             </li>
             <li className='nav-item'>
