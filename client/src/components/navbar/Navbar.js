@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '../button/Button';
 import { Link } from 'react-router-dom';
@@ -11,7 +12,7 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
-    if (window.innerWidth <= 960) {
+    if (window.innerWidth <= 1080) {
       setButton(false);
     } else {
       setButton(true);
@@ -81,16 +82,20 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to='/SignUp'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
+                  to='/SignUp'
+                  className='nav-links-mobile'
+                  onClick={closeMobileMenu}
+                >
+                  Sign Up
               </Link>
             </li>
           </ul>
 
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Link to='/SignUp'>
+            <Button buttonStyle='btn--outline'>
+              SIGN UP
+            </Button>
+          </Link>}
 
         </div>
       </nav>

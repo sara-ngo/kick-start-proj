@@ -1,12 +1,15 @@
 import React from 'react';
 import '../../App.css';
+import Info from '../info/Info';
+import Footer from '../footer/Footer';
 
-export default function Resources() {
+function Resources() {
   return (
     <>
-      <div>
-        <h2>Resources</h2>
-      </div>
+      <Info />
+      <Footer />
     </>
   );
 }
+
+export default Resources;

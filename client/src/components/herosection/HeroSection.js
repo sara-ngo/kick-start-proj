@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../App.css';
 import { Button } from '../button/Button';
 import './HeroSection.css';
@@ -11,21 +12,25 @@ function HeroSection() {
       <p>Reveal your political leanings</p>
 
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-        >
-          GET STARTED
-        </Button>
+        <Link to='/SignUp'>
+          <Button
+            className='btns'
+            buttonStyle='btn--primary'
+            buttonSize='btn--large'
+          >
+            GET STARTED
+          </Button>
+        </Link>
 
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          READ MORE
-        </Button>
+        <Link to='/Resources'>
+          <Button
+            className='btns'
+            buttonStyle='btn--outline'
+            buttonSize='btn--large'
+          >
+            LEARN MORE
+          </Button>
+        </Link>
       </div>
     </div>
   );

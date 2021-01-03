@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #3C3C6C;
+  margin-bottom: 2rem;
+}
+
+.about__text > p {
+    color: #8585A4;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 960px) {
+  .about__text > p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

@@ -1,12 +1,17 @@
 import React from 'react';
 import '../../App.css';
+import Cards from '../cards/Cards';
+import Footer from '../footer/Footer';
+import About from '../about/About';
 
-export default function AboutUs() {
+function AboutUs() {
   return (
-  <>
-    <div>
-      <h2>ABOUT US</h2>
-    </div>
-  </>
+    <>
+      <About />
+      <Cards />
+      <Footer />
+    </>
   );
 }
+
+export default AboutUs;

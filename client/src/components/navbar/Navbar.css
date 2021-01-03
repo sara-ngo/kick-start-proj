@@ -6,6 +6,7 @@
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
+  padding: 0px;
   top: 0;
   z-index: 999;
 }
@@ -15,7 +16,7 @@
   justify-content: center;
   align-items: center;
   height: 80px;
-  max-width: 1500px;
+  max-width: 1700px;
 }
 
 .navbar-logo {
@@ -26,7 +27,7 @@
   text-decoration: none;
   font-size: 1.5rem;
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 
 .fa-spider {
@@ -36,17 +37,19 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 65vw;
   justify-content: end;
   margin-right: 2rem;
+  margin-bottom: 0rem;
 }
 
 .nav-item {
   height: 80px;
+  margin-bottom: 0rem;
 }
 
 .nav-links {
@@ -76,7 +79,7 @@
 }
 
 /* when squeeze */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1080px) {
   .NavbarItems {
     position: relative;
   }
@@ -116,7 +119,7 @@
 
   .navbar-logo {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 0;
     transform: translate(25%, 50%);
   }
@@ -124,7 +127,7 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;

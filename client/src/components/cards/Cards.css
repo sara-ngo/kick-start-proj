@@ -3,7 +3,7 @@
   background: #8585A4;
 }
 
-h1, h3
+.cards > h1, h3
 {
   text-align: center;
   color: #fff;
@@ -45,6 +45,7 @@ h1, h3
   overflow: hidden;
   text-decoration: none;
   background: #fff;
+  margin: 0 25px 10px 25px;
 }
 
 .cards__item__pic-wrap {
@@ -98,11 +99,16 @@ h1, h3
 }
 
 .cards__item__text {
-  color: #252e48;
+  color: #4966bd;
   font-size: 18px;
   line-height: 20px;
 }
 
+.cards__item__paragraph {
+  color: #252e48;
+  font-size: 16px;
+  line-height: 20px;
+}
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from '../button/Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -16,19 +15,12 @@ function Footer() {
           </div>
           <div className='input-areas'>
             <h2>CONTACT US</h2>
-            <form>
-              <input
-                className='footer-input'
-                name='email'
-                type='email'
-                placeholder='Enter your email here'
-              />
-              <Button buttonStyle='btn--outline'>Send</Button>
-            </form>
+            <p>Email: thespider2020@sjsu.edu</p>
+            <p>Address: 1st Washington Square, San Jose CA 95192</p>
+          </div>
         </div>
       </div>
-       
-      </div>
+
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
