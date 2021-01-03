@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import ChoiceList from "./../../components/ChoiceList";
+import { Link } from 'react-router-dom';
+import GoBackBtn from "./../../components/GoBackBtn";
+
 export default function Questions() {
     const questions = [
         {
@@ -30,7 +33,7 @@ export default function Questions() {
                 {
                     id: "2Alliance,Libertarian,Green,Peace,Democratic",
                     answer: "No"
-                },{
+                }, {
                     id: "2Reform",
                     answer: "No stance"
                 }
@@ -312,8 +315,10 @@ export default function Questions() {
         }
 
     ];
-    const iniObj = {Republican:0, Democratic:0, Tea:0, Constitution:0,
-        Green:0, Peace:0, Libertarian:0, Alliance:0, Reform:0};
+    const iniObj = {
+        Republican: 0, Democratic: 0, Tea: 0, Constitution: 0,
+        Green: 0, Peace: 0, Libertarian: 0, Alliance: 0, Reform: 0
+    };
     const [obj, setObj] = useState(iniObj);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [end, setEnd] = useState(false);
@@ -321,37 +326,39 @@ export default function Questions() {
 
     const handleClick = (id) => {
         if (id.includes("Republican")) {
-            setObj(prevObj => ({...prevObj, Republican: obj.Republican+1}));
-        } 
+            setObj(prevObj => ({ ...prevObj, Republican: obj.Republican + 1 }));
+        }
         if (id.includes("Democratic")) {
-            setObj(prevObj => ({...prevObj, Democratic: obj.Democratic+1}));
+            setObj(prevObj => ({ ...prevObj, Democratic: obj.Democratic + 1 }));
         }
         if (id.includes("Tea")) {
-            setObj(prevObj => ({...prevObj, Tea: obj.Tea+1}));
+            setObj(prevObj => ({ ...prevObj, Tea: obj.Tea + 1 }));
         }
         if (id.includes("Constitution")) {
-            setObj(prevObj => ({...prevObj, Constitution: obj.Constitution+1}));
+            setObj(prevObj => ({ ...prevObj, Constitution: obj.Constitution + 1 }));
         }
         if (id.includes("Green")) {
-            setObj(prevObj => ({...prevObj, Green: obj.Green+1}));
+            setObj(prevObj => ({ ...prevObj, Green: obj.Green + 1 }));
         }
         if (id.includes("Peace")) {
-            setObj(prevObj => ({...prevObj, Peace: obj.Peace+1}));
+            setObj(prevObj => ({ ...prevObj, Peace: obj.Peace + 1 }));
         }
         if (id.includes("Libertarian")) {
-            setObj(prevObj => ({...prevObj, Libertarian: obj.Libertarian+1}));
+            setObj(prevObj => ({ ...prevObj, Libertarian: obj.Libertarian + 1 }));
         }
         if (id.includes("Alliance")) {
-            setObj(prevObj => ({...prevObj, Alliance: obj.Alliance+1}));
+            setObj(prevObj => ({ ...prevObj, Alliance: obj.Alliance + 1 }));
         }
         if (id.includes("Reform")) {
-            setObj(prevObj => ({...prevObj, Reform: obj.Reform+1}));
+            setObj(prevObj => ({ ...prevObj, Reform: obj.Reform + 1 }));
         }
+    }
+    const next = () => {
         const nextQuestion = currentQuestion + 1;
         if (nextQuestion < questions.length) {
             setCurrentQuestion(nextQuestion);
         } else {
-            var str = String(Object.keys(obj).reduce((a,b) => obj[a]>obj[b] ? a : b));
+            var str = String(Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b));
             setResult(str);
             setEnd(true);
             console.log(result)
@@ -359,7 +366,6 @@ export default function Questions() {
         console.log(obj);
     }
     const again = () => {
-        console.log("test")
         setCurrentQuestion(0);
         setEnd(false)
         setObj(iniObj);
@@ -368,21 +374,25 @@ export default function Questions() {
         <>
             <div className="container mt-5" >
                 <div className="card text-white mb-3 ps-3 pt-3" style={{ backgroundColor: "rgb(60, 60, 108)" }}>
-                    {end ? 
-                    <div>
-                        <h3>This is your result:</h3>
-                        <h5>Republican Party: {obj.Republican}</h5>
-                        <h5>Democratic Party: {obj.Democratic}</h5>
-                        <h5>Libertarian Party: {obj.Libertarian}</h5>
-                        <h5>Constitution Party: {obj.Constitution}</h5>
-                        <h5>Alliance Party: {obj.Alliance}</h5>
-                        <h5>Tea Party: {obj.Tea}</h5>
-                        <h5>Green Party: {obj.Green}</h5>
-                        <h5>Peace and Freedom: {obj.Peace}</h5>
-                        <h5>Reform Party: {obj.Reform}</h5>
-                        <h3>The result shows that you should join {result} party but the decision is your</h3>
-                        <button onClick={again} className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white", float:"right" }}>Take Another Quiz</button>
-                    </div> :
+                    {end ?
+                        <div>
+                            <h3>This is your result:</h3>
+                            <h5>Republican Party: {obj.Republican}</h5>
+                            <h5>Democratic Party: {obj.Democratic}</h5>
+                            <h5>Libertarian Party: {obj.Libertarian}</h5>
+                            <h5>Constitution Party: {obj.Constitution}</h5>
+                            <h5>Alliance Party: {obj.Alliance}</h5>
+                            <h5>Tea Party: {obj.Tea}</h5>
+                            <h5>Green Party: {obj.Green}</h5>
+                            <h5>Peace and Freedom: {obj.Peace}</h5>
+                            <h5>Reform Party: {obj.Reform}</h5>
+                            <h3>The result shows that you should join {result} party but the decision is your</h3>
+                            <div style={{float:"right"}}>
+                                <button onClick={again} className="btn rounded" type="button"
+                                    style={{ backgroundColor: "rgb(60, 60, 108)", color: "white" }}>Take Another Quiz</button>
+                                <GoBackBtn />
+                            </div>
+                        </div> :
                         <>
                             <div className="card-header">Question {questions[currentQuestion].id}</div>
                             <div className="card-body">
@@ -390,9 +400,17 @@ export default function Questions() {
                                 <ChoiceList choices={questions[currentQuestion].choices}
                                     handleClick={handleClick} />
                             </div>
+                            <div>
+                                <button onClick={next} className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white", marginRight: "5px" }}>Next</button>
+                                <Link to="/">
+                                    <button className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white" }}>Quit</button>
+                                </Link>
+                            </div>
                         </>}
 
                 </div>
+
+
             </div>
         </>
     );

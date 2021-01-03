@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import ListComments from "./../../components/ListComments";
 import API from "./../../components/API";
+import GoBackBtn from "./../../components/GoBackBtn";
+
 class Comments extends Component {
     state = {
         input: "",
@@ -48,16 +50,18 @@ class Comments extends Component {
     render() {
         return (
             <div className="container text-white">
-                <h1>Dicussion Forum</h1>
                 <textarea
                 placeholder="Share your political view ..."
                 className="form-control"
                 onChange={this.handleInputChange}
                 value={this.state.input}
                 name="input" />
-                <button onClick={this.handleSubmit} className="btn btn-info" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white" }}>
+                <div className="mt-1">
+                <button onClick={this.handleSubmit} className="btn btn-info" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white", marginRight: "5px"}}>
                     Send
                 </button>
+                <GoBackBtn />
+                </div>
                 <ListComments
                 renderParent={this.reRenderParent}
                 reply={this.state.reply}
