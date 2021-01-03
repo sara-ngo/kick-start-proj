@@ -36,6 +36,13 @@
   font-weight: 500;
 }
 
+.btn--goback {
+  background-color: "rgb(60, 60, 108)";
+  color: #fff;
+  padding: 8px 20px;
+  margin: 20px;
+}
+
 .btn--medium {
   padding: 8px 20px;
   font-size: 18px;
