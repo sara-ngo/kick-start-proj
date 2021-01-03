@@ -1,24 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
-import Questions from "./../../containers/Questions";
+import Footer from '../footer/Footer';
+import GoBackBtn from "./../GoBackBtn";
 
 export default function TakeQuiz() {
   return (
     <>
-      <div className="container">
+      <div className="container mt-5 mb-5">
         <div className="col-md text-start">
-          <h1 style={{color:"black"}}>some content will be here</h1>
+          <h2 style={{color: "#8585A4"}}>This quiz has 20 multiple choice questions which determines the political party that best suits your interests.
+          There is no time limited but please finish the quiz at one sitting since you can't resume your quiz after you quit. 
+          Give careful consideration to your answers because you can't go back to the previous question to change your answer. 
+          When you ready, click on "Let Start" button below to start your quiz.</h2>
         </div>
         <div className="text-center">
           <Link to="/Quiz">
           <button className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white", marginRight:"5px" }}>Let Start</button>
           </Link>
-          <Link to="/">
-            <button className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white" }}>Go Back</button>
-          </Link>
+          <GoBackBtn />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
