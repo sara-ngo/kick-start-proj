@@ -9,7 +9,7 @@ function Info () {
                 <h1>HISTORY</h1>
             </div>
             <div className="info__text">
-                <h3>Political Parties</h3>
+                <h3>Political Parties in the US</h3>
                 <div className="paragraph"> 
                     <text>
                     Conservative:
