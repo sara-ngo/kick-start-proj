@@ -11,7 +11,8 @@ function Info () {
             <div className="info__text">
                 <h3>Political Parties</h3>
                 <div className="paragraph"> 
-                    <text>Conservative:
+                    <text>
+                    Conservative:
                     Republican Party 
                     Tea Party
                     Constitution Party
