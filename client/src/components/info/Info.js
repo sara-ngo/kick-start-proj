@@ -6,7 +6,7 @@ function Info () {
     return (
         <div className="info">
             <div className="info__header">
-                <h1>HISTORY</h1>
+                <h1>General Infomation</h1>
             </div>
             <div className="info__text">
                 <h3>Political Parties in the US</h3>
