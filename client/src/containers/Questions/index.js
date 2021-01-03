@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import ChoiceList from "./../../components/ChoiceList";
 import { Link } from 'react-router-dom';
 import GoBackBtn from "./../../components/GoBackBtn";
-import './index.css';
+import { Button } from "../../components/button/Button";
+import '../../components/quiz/TakeQuiz.css';
 
 export default function Questions() {
     const questions = [
@@ -71,7 +72,7 @@ export default function Questions() {
             ]
         }, {
             id: 5,
-            title: "should the federal government pay for tuition at 4-year colleges and universities?",
+            title: "Should the federal government pay for tuition at 4-year colleges and universities?",
             choices: [
                 {
                     id: "5Alliance,Green,Reform,Peace,Democratic",
@@ -96,7 +97,7 @@ export default function Questions() {
                 },
                 {
                     id: "6Reform",
-                    answer: "No but increase border security"
+                    answer: "No, but increase border security"
                 }
             ]
         }, {
@@ -113,7 +114,7 @@ export default function Questions() {
                 },
                 {
                     id: "7Libertarian,Constitution",
-                    answer: "No and abolish financially regulatory election laws"
+                    answer: "No, and abolish financially regulatory election laws"
                 }
             ]
         }, {
@@ -126,15 +127,15 @@ export default function Questions() {
                 },
                 {
                     id: "8Constitution",
-                    answer: "Yes and revert back to original electoral college found in Constitution."
+                    answer: "Yes, and revert back to original electoral college found in Constitution."
                 },
                 {
                     id: "8Peace,Reform",
-                    answer: "Yes and replace with election by popular vote"
+                    answer: "Yes, and replace with election by popular vote"
                 },
                 {
                     id: "8Alliance",
-                    answer: "Yes and replace with ranked choice voting"
+                    answer: "Yes, and replace with ranked choice voting"
                 },
                 {
                     id: "8Republican,Tea",
@@ -164,7 +165,7 @@ export default function Questions() {
                 },
                 {
                     id: "10Libertarian,Constitution,Tea,Republican",
-                    answer: "No or decrease regulations"
+                    answer: "No, or decrease regulations"
                 }
             ]
         }, {
@@ -195,7 +196,7 @@ export default function Questions() {
             ]
         }, {
             id: 13,
-            title: "FShould the government invest in alternative energy resources?",
+            title: "Should the government invest in alternative energy resources?",
             choices: [
                 {
                     id: "13Alliance,Libertarian,Green,Reform,Peace,Democratic",
@@ -233,7 +234,7 @@ export default function Questions() {
                 },
                 {
                     id: "15Alliance,Libertarian,Constitution,Reform,Republican",
-                    answer: "No or decrease regulations"
+                    answer: "No, or decrease regulations"
                 }
             ]
         }, {
@@ -246,7 +247,7 @@ export default function Questions() {
                 },
                 {
                     id: "16Reform",
-                    answer: "Yes only if they have definitive evidence against the suspect."
+                    answer: "Yes, only if they have definitive evidence against the suspect."
                 },
                 {
                     id: "16Alliance,Libertarian,Green,Peace,Democratic",
@@ -374,7 +375,7 @@ export default function Questions() {
     return (
         <>
             <div className="container" >
-                <div className="card text-white mb-3 ps-3 pt-3" style={{ backgroundColor: "rgb(60, 60, 108)" }}>
+                <div className="card">
                     {end ?
                         <div>
                             <h3>This is your result:</h3>
@@ -387,25 +388,35 @@ export default function Questions() {
                             <h5>Green Party: {obj.Green}</h5>
                             <h5>Peace and Freedom: {obj.Peace}</h5>
                             <h5>Reform Party: {obj.Reform}</h5>
-                            <h3>The result shows that you should join {result} party but the decision is your</h3>
-                            <div style={{float:"right"}}>
-                                <button onClick={again} className="btn rounded" type="button"
-                                    style={{ backgroundColor: "rgb(60, 60, 108)", color: "white" }}>Take Another Quiz</button>
+                            <h3>The result shows that you should join {result} 
+                            Party but the decision is your</h3>
+                            <div>
+                                <Button buttonStyle='btn--outline'>Take Another Quiz</Button>
                                 <GoBackBtn />
                             </div>
                         </div> :
                         <>
-                            <div className="card-header">Question {questions[currentQuestion].id}</div>
+                            <div className="card-header">
+                                Question {questions[currentQuestion].id}
+                            </div>
+
                             <div className="card-body">
                                 <h5 className="card-title">{questions[currentQuestion].title}</h5>
                                 <ChoiceList choices={questions[currentQuestion].choices}
                                     handleClick={handleClick} />
                             </div>
+
                             <div>
-                                <button onClick={next} className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white", marginRight: "5px" }}>Next</button>
-                                <Link to="/">
-                                    <button className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white" }}>Quit</button>
+                                <Button buttonStyle='btn--primary' buttonSize='btn--medium'
+                                onClick={next}>
+                                    Next
+                                </Button>
+                                <Link to='/'>
+                                    <Button buttonStyle='btn--outline' buttonSize='btn--medium'>
+                                        Quit
+                                    </Button>
                                 </Link>
+                                
                             </div>
                         </>}
 

@@ -20,7 +20,7 @@ function TakeQuiz() {
         
         <div className="text-center">
           <Link to="/Quiz">
-            <Button buttonStyle='btn--primary' buttonSize='btn-medium'>
+            <Button buttonStyle='btn--form' buttonSize='btn-medium'>
               Let Start
             </Button>
           </Link>
