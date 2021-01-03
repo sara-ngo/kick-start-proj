@@ -1,37 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../components/quiz/TakeQuiz.css';
-import { Button } from '../button/Button';
 import Footer from '../footer/Footer';
+import GoBackBtn from "./../GoBackBtn";
+import '../../components/quiz/TakeQuiz.css';
+
 
 function TakeQuiz() {
   return (
     <>
-      <div className="container">
+      <div className="container mt-5 mb-5">
         <div className="col-md text-start">
-          <h1 style={{color:"black"}}>We supposed to ask users to register for an account before taking this quiz</h1>
+          <h2 style={{color: "#8585A4"}}>This quiz has 20 multiple choice questions which determines the political party that best suits your interests.
+          There is no time limited but please finish the quiz at one sitting since you can't resume your quiz after you quit. 
+          Give careful consideration to your answers because you can't go back to the previous question to change your answer. 
+          When you ready, click on "Let Start" button below to start your quiz.</h2>
         </div>
         <div className="text-center">
-          
-        <Link to='/Quiz'>
-          <Button
-            className='btns'
-            buttonStyle='btn--form'
-            buttonSize='btn--large'
-          >
-            Let Start
-          </Button>
-        </Link>
-        <Link to='/'>
-          <Button
-            className='btns'
-            buttonStyle='btn--primary'
-            buttonSize='btn--large'
-          >
-            Go Back
-          </Button>
-        </Link>
-          
+          <Link to="/Quiz">
+          <button className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white", marginRight:"5px" }}>Let Start</button>
+          </Link>
+          <GoBackBtn />
         </div>
       </div>
       <Footer />
