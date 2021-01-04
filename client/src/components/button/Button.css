@@ -10,10 +10,12 @@
   cursor: pointer;
 }
 
+/*btnStyle*/
 .btn--primary {
   background-color: var(--primary);
   color: #242424;
-  border: 1px solid var(--primary);}
+  border: 1px solid var(--primary);
+}
 
 .btn--outline {
   background-color: transparent;
@@ -41,6 +43,7 @@
   margin: 20px;
 }
 
+/*btnSize*/
 .btn--medium {
   padding: 8px 20px;
   font-size: 18px;

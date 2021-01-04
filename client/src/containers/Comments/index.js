@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import ListComments from "./../../components/ListComments";
 import API from "./../../components/API";
 import GoBackBtn from "./../../components/GoBackBtn";
+import '../Comments/discussion.css';
 
 class Comments extends Component {
     state = {
