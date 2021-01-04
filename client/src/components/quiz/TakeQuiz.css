@@ -43,21 +43,19 @@
   padding-bottom: 0;
 }
 
-.card > div:nth-child(3) {
-  max-width: 500px;
-  text-align: center;
+.card-btn {
   margin: 10px 0;
+  padding: 0 4rem;
+  width: inherit;
 }
 
-.card > div:nth-child(3) > a:nth-child(2) > button:nth-child(1) {
+.card-btn > a {
+  position: relative;
   float: right;
 }
 
-.card > div:nth-child(1) > div:nth-child(12) {
-  text-align: center;
-}
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .text-start > h2 { 
     text-align: center;
     margin: 2rem;
@@ -68,13 +66,15 @@
     max-width: 500px;
   }
 
-  .card > div:nth-child(3) {
+  .card-btn {
     max-width: 500px;
     text-align: center;
     margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .card > div:nth-child(3) > a:nth-child(2) > button:nth-child(1) {
+  .card-btn > a {
     margin-top: 10px;
   }
 }

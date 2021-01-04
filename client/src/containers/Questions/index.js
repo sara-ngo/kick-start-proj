@@ -230,7 +230,7 @@ export default function Questions() {
             title: "Should the government increase its regulation of businesses?",
             choices: [
                 {
-                    id: "15Green,PEace,Democratic",
+                    id: "15Green,Peace,Democratic",
                     answer: "Yes"
                 },
                 {
@@ -299,7 +299,7 @@ export default function Questions() {
             title: "Should the government increase spending on public transportation (buses, metro, etc)?",
             choices: [
                 {
-                    id: "20Alliance,Green,PEace,Democratic",
+                    id: "20Alliance,Green,Peace,Democratic",
                     answer: "Yes"
                 },
                 {
@@ -409,7 +409,7 @@ export default function Questions() {
                                     handleClick={handleClick} />
                             </div>
 
-                            <div>
+                            <div className="card-btn">
                                 {isAnswered ? <Button buttonStyle='btn--primary' buttonSize='btn--medium'
                                 onClick={next}>
                                     Next
