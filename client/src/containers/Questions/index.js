@@ -35,7 +35,8 @@ export default function Questions() {
                 {
                     id: "2Alliance,Libertarian,Green,Peace,Democratic",
                     answer: "No"
-                }, {
+                },
+                {
                     id: "2Reform",
                     answer: "No stance"
                 }
@@ -43,14 +44,14 @@ export default function Questions() {
         }, {
             id: 3,
             title: "Should gun control laws be repealed?",
-            choices: [
-                {
-                    id: "3Green,Peace,Democratic",
-                    answer: "No"
-                },
+            choices: [               
                 {
                     id: "3Alliance,Libertarian,Constitution,Tea,Republican",
                     answer: "Yes"
+                },
+                {
+                    id: "3Green,Peace,Democratic",
+                    answer: "No"
                 },
                 {
                     id: "3Reform",
@@ -119,7 +120,7 @@ export default function Questions() {
             ]
         }, {
             id: 8,
-            title: "First Questions",
+            title: "Should the Electoral College be abolished?",
             choices: [
                 {
                     id: "8Libertarian,Green,Democratic",
@@ -144,7 +145,7 @@ export default function Questions() {
             ]
         }, {
             id: 9,
-            title: "Should the US withdra from the Paris Climate Agreements?",
+            title: "Should the US withdraw from the Paris Climate Agreements?",
             choices: [
                 {
                     id: "9Constitution,Tea,Republican",
@@ -209,7 +210,7 @@ export default function Questions() {
             ]
         }, {
             id: 14,
-            title: "Should the government mandata vaccinations of preventable diseases for all children?",
+            title: "Should the government mandate vaccinations of preventable diseases for all children?",
             choices: [
                 {
                     id: "14Alliance,Green,Peace,Democratic",
@@ -234,7 +235,7 @@ export default function Questions() {
                 },
                 {
                     id: "15Alliance,Libertarian,Constitution,Reform,Republican",
-                    answer: "No, or decrease regulations"
+                    answer: "No or decrease regulations"
                 }
             ]
         }, {
@@ -302,12 +303,12 @@ export default function Questions() {
                     answer: "Yes"
                 },
                 {
-                    id: "20Constitution",
-                    answer: "No"
-                },
-                {
                     id: "20Libertarian",
                     answer: "Public transportation should be paid voluntarily"
+                },
+                {
+                    id: "20Constitution",
+                    answer: "No"
                 },
                 {
                     id: "20Reform",
@@ -315,7 +316,6 @@ export default function Questions() {
                 }
             ]
         }
-
     ];
     const iniObj = {
         Republican: 0, Democratic: 0, Tea: 0, Constitution: 0,
@@ -325,8 +325,10 @@ export default function Questions() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [end, setEnd] = useState(false);
     const [result, setResult] = useState("");
+    const [isAnswered, setIsanswered] = useState(false);
 
     const handleClick = (id) => {
+        setIsanswered(true);
         if (id.includes("Republican")) {
             setObj(prevObj => ({ ...prevObj, Republican: obj.Republican + 1 }));
         }
@@ -365,12 +367,14 @@ export default function Questions() {
             setEnd(true);
             console.log(result)
         }
+        setIsanswered(false);
         console.log(obj);
     }
     const again = () => {
         setCurrentQuestion(0);
         setEnd(false)
         setObj(iniObj);
+        setIsanswered(false);
     }
     return (
         <>
@@ -388,10 +392,9 @@ export default function Questions() {
                             <h5>Green Party: {obj.Green}</h5>
                             <h5>Peace and Freedom: {obj.Peace}</h5>
                             <h5>Reform Party: {obj.Reform}</h5>
-                            <h3>The result shows that you should join {result} 
-                            Party but the decision is your</h3>
+                            <h3>The result shows that you should join {result} Party but the decision is your</h3>
                             <div>
-                                <Button buttonStyle='btn--outline'>Take Another Quiz</Button>
+                                <Button buttonStyle='btn--outline' onClick={again}>Take Another Quiz</Button>
                                 <GoBackBtn />
                             </div>
                         </div> :
@@ -407,12 +410,12 @@ export default function Questions() {
                             </div>
 
                             <div>
-                                <Button buttonStyle='btn--primary' buttonSize='btn--medium'
+                                {isAnswered ? <Button buttonStyle='btn--primary' buttonSize='btn--medium'
                                 onClick={next}>
                                     Next
-                                </Button>
+                                </Button> : null}
                                 <Link to='/'>
-                                    <Button buttonStyle='btn--outline' buttonSize='btn--medium'>
+                                    <Button buttonStyle='btn--outline' style={{float:"right"}} buttonSize='btn--medium'>
                                         Quit
                                     </Button>
                                 </Link>
