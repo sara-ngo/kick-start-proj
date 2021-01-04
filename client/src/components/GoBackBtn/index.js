@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from '../button/Button';
 
 const GoBackBtn = () => {
     return (
         <Link to="/">
-            <button className="btn rounded" type="button" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white" }}>Go Back</button>
+            <Button buttonStyle='btn--goback' buttonSize='btn-medium'>
+                Go Back
+            </Button>
         </Link>
     )
 }

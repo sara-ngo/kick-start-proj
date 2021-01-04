@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom';
+import React from 'react';
+import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import SignInForm from '../membersportal/SignInForm';
 import SignUpForm from '../membersportal/SignUpForm';
 import Footer from '../footer/Footer';
