@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import ListComments from "./../../components/ListComments";
 import API from "./../../components/API";
 import GoBackBtn from "./../../components/GoBackBtn";
-import '../Comments/discussion.css';
 import {Button} from "./../../components/button/Button";
 import {animateScroll} from 'react-scroll';
 
@@ -30,9 +29,6 @@ class Comments extends Component {
             });
             alert("Your comment successfully posted!");
             animateScroll.scrollToBottom();
-            // window.scrollIntoView({
-            //     behavior: "smooth"
-            // });
         }
     };
     handleReply = (commentId, commentText) => {
@@ -61,7 +57,7 @@ class Comments extends Component {
     }
     render() {
         return (
-            <div className="Container text-white mx-5 px-5">
+            <div className="text-white mx-5 px-5">
                 <textarea
                 placeholder="Share your political view ..."
                 className="form-control"

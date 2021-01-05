@@ -10,10 +10,6 @@ function Quiz() {
         <div className="text-start">
           <Questions />
         </div>
-        
-        <div className="text-center">
-          {/* <GoBackBtn /> */}
-        </div>
       </div>
       <Footer />
     </>

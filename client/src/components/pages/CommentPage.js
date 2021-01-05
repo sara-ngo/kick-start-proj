@@ -1,13 +1,11 @@
 import React from 'react';
-import '../../containers/Comments/discussion.css';
 import Comments from "./../../containers/Comments";
 import Footer from '../footer/Footer';
-import GoBackBtn from "./../GoBackBtn";
 import GoUp from "./../GoUp";
 export default function CommentPage() {
   return (
     <>
-      <div className="Container">
+      <div className="mt-5">
         <h1>Discussion Forum</h1>
         <div className="text-start">
           <Comments />

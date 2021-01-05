@@ -33,16 +33,10 @@ function Cards() {
 
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.png'
+              src='https://media-exp1.licdn.com/dms/image/C5603AQG7sEnN51IRvA/profile-displayphoto-shrink_400_400/0/1598122309543?e=1615420800&v=beta&t=uDS_PuTSw5r7gtkETVwae7Itn1XOyN6FzsQzeGRHJ_M'
               label='Hang Ho'
               text='Backend Engineer'
-              paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-              culpa qui officia deserunt mollit anim id est laborum. a very long line of text'            />
+              paragraph='Junior student in Computer Science major at San Jose State University. Interested in front-end, back-end, and full-stack development.'            />
             <CardItem
               src='images/img-9.png'
               label='Karan'
