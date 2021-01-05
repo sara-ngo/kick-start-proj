@@ -1,6 +1,6 @@
 .container {
     background-color: #8585A4;
-    height: 90vh;
+    /* height: 90vh; */
     padding: 4rem 0 4rem 0;
     display: flex;
     flex-direction: column;

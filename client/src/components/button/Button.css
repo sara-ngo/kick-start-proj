@@ -37,7 +37,7 @@
 }
 
 .btn--goback {
-  background-color: "rgb(60, 60, 108)";
+  background-color: rgb(60, 60, 108);
   color: #fff;
   padding: 8px 20px;
   margin: 20px;

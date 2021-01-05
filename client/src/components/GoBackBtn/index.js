@@ -5,7 +5,7 @@ import { Button } from '../button/Button';
 const GoBackBtn = () => {
     return (
         <Link to="/">
-            <Button buttonStyle='btn--goback' buttonSize='btn-medium'>
+            <Button buttonStyle='btn--goback' buttonSize='btn--medium'>
                 Go Back
             </Button>
         </Link>
