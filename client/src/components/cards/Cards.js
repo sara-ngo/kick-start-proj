@@ -36,7 +36,7 @@ function Cards() {
               src='https://media-exp1.licdn.com/dms/image/C5603AQG7sEnN51IRvA/profile-displayphoto-shrink_400_400/0/1598122309543?e=1615420800&v=beta&t=uDS_PuTSw5r7gtkETVwae7Itn1XOyN6FzsQzeGRHJ_M'
               label='Hang Ho'
               text='Backend Engineer'
-              paragraph='Junior student in Computer Science major at San Jose State University. Interested in front-end, back-end, and full-stack development.'            />
+              paragraph='Junior student in Computer Science major at San Jose State University. Software Developer | Seeking intership in summer 2021 and Full Time opportunities in the field of Computer Science from Summer 2022.'/>
             <CardItem
               src='images/img-9.png'
               label='Karan'
