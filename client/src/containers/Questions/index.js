@@ -381,7 +381,7 @@ export default function Questions() {
             <div className="container" >
                 <div className="card">
                     {end ?
-                        <div>
+                        <div className="text-white">
                             <h3>This is your result:</h3>
                             <h5>Republican Party: {obj.Republican}</h5>
                             <h5>Democratic Party: {obj.Democratic}</h5>
@@ -394,7 +394,7 @@ export default function Questions() {
                             <h5>Reform Party: {obj.Reform}</h5>
                             <h3>The result shows that you should join {result} Party but the decision is your</h3>
                             <div>
-                                <Button buttonStyle='btn--outline' onClick={again}>Take Another Quiz</Button>
+                                <Button buttonStyle='btn--goback' onClick={again}>Take Another Quiz</Button>
                                 <GoBackBtn />
                             </div>
                         </div> :

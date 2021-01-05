@@ -14,11 +14,15 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.0"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mysql": "^2.18.1",
-    "react-script": "^2.0.5"
+    "react-script": "^2.0.5",
+    "react-scroll": "^1.8.1"
   }
 }

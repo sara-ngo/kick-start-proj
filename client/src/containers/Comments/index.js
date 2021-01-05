@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import ListComments from "./../../components/ListComments";
 import API from "./../../components/API";
 import GoBackBtn from "./../../components/GoBackBtn";
-import '../Comments/discussion.css';
-
+import {Button} from "./../../components/button/Button";
+import {animateScroll} from 'react-scroll';
 
 class Comments extends Component {
     state = {
@@ -20,10 +20,16 @@ class Comments extends Component {
     };
     handleSubmit = (e) => {
         e.preventDefault();
-        API.createComment({ comments:this.state.input }).then((res) => {
-            this.setState({ comments: res.data, input: "" });
-        });
-        alert("Comment successfully posted!");
+        if (this.state.input === "") {
+            console.log("work")
+            alert("Your comment can't be empty.");
+        } else {
+            API.createComment({ comments:this.state.input }).then((res) => {
+                this.setState({ comments: res.data, input: "" });
+            });
+            alert("Your comment successfully posted!");
+            animateScroll.scrollToBottom();
+        }
     };
     handleReply = (commentId, commentText) => {
         const newReply = {
@@ -51,19 +57,17 @@ class Comments extends Component {
     }
     render() {
         return (
-            <div className="container text-white">
+            <div className="text-white mx-5 px-5">
                 <textarea
                 placeholder="Share your political view ..."
                 className="form-control"
                 onChange={this.handleInputChange}
                 value={this.state.input}
                 name="input" />
-                <div className="mt-1">
-                <button onClick={this.handleSubmit} className="btn btn-info" style={{ backgroundColor: "rgb(60, 60, 108)", color: "white", marginRight: "5px"}}>
+                <Button onClick={this.handleSubmit} buttonStyle='btn--goback' buttonSize='btn--medium'className="btn" >
                     Send
-                </button>
+                </Button>
                 <GoBackBtn />
-                </div>
                 <ListComments
                 renderParent={this.reRenderParent}
                 reply={this.state.reply}
