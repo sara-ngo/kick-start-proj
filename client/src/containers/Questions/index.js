@@ -393,8 +393,10 @@ export default function Questions() {
                             <h5>Peace and Freedom: {obj.Peace}</h5>
                             <h5>Reform Party: {obj.Reform}</h5>
                             <h3>The result shows that you should join {result} Party but the decision is your</h3>
-                            <div>
-                                <Button buttonStyle='btn--goback' onClick={again}>Take Another Quiz</Button>
+                            <div className="button">
+                                <Button buttonStyle='btn--form' onClick={again}>
+                                    Try again
+                                </Button>
                                 <GoBackBtn />
                             </div>
                         </div> :

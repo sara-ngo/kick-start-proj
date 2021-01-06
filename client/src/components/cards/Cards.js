@@ -18,16 +18,12 @@ function Cards() {
                 in web development and project management.'
             />
             <CardItem
-              src='images/img-9.png'
+              src='images/sara.jpg'
               label='Tuyet Nhi Ngo'
               text="Frontend Engineer"
-              paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-              culpa qui officia deserunt mollit anim id est laborum. a very long line of text'
+              paragraph='Currently pursuing a Bachelor in Computer Science degree 
+              at San Jose State University. A junior student with focus on
+              full-stack web development.'
             />
           </ul>
 
@@ -47,7 +43,7 @@ function Cards() {
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
               pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-              culpa qui officia deserunt mollit anim id est laborum. a very long line of text'    
+              culpa qui officia deserunt mollit anim id est laborum.'    
             />
           </ul>
         </div>

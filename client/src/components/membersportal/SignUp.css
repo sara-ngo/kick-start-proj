@@ -114,6 +114,7 @@
   display: inline-block;
   border-bottom: 1.5px solid #3C3C6C;
   padding-bottom: 5px;
+  margin-left: 20px;
 }
 
 .FormField__CheckboxLabel {

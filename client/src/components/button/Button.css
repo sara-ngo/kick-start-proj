@@ -26,27 +26,28 @@
 }
 
 .btn--form {
-  background-color: #3C3C6C;
+  background-color: #3c3c6c;
   color: #fff;
   outline: none;
   padding: 8px 20px;
-  margin-right: 20px;
   transition: all 0.3s ease-out;
   font-size: .8em;
   font-weight: 500;
 }
 
 .btn--goback {
-  background-color: rgb(60, 60, 108);
+  background-color: #CCCCD9;
   color: #fff;
   padding: 8px 20px;
   margin: 20px;
+  width: 120px;
 }
 
 /*btnSize*/
 .btn--medium {
   padding: 8px 20px;
   font-size: 18px;
+  width: 120px;
 }
 
 .btn--large {
