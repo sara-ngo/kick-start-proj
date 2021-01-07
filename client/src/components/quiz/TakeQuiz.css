@@ -54,6 +54,13 @@
   float: right;
 }
 
+.text-white {
+  max-width: 800px;
+}
+
+.button {
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   .text-start > h2 { 
@@ -76,5 +83,23 @@
 
   .card-btn > a {
     margin-top: 10px;
+  }
+
+  .button {
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .card {
+    min-width: 0;
+    max-width: 80%;
+  }
+
+  .card-btn {
+    max-width: 300px;
+    text-align: center;
+    margin: 18px;
   }
 }

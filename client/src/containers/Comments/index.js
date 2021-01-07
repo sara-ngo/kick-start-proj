@@ -64,7 +64,7 @@ class Comments extends Component {
                 onChange={this.handleInputChange}
                 value={this.state.input}
                 name="input" />
-                <Button onClick={this.handleSubmit} buttonStyle='btn--goback' buttonSize='btn--medium'className="btn" >
+                <Button onClick={this.handleSubmit} buttonStyle='btn--form' buttonSize='btn--medium'className="btn" >
                     Send
                 </Button>
                 <GoBackBtn />
