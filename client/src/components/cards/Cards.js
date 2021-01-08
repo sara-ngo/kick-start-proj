@@ -18,7 +18,7 @@ function Cards() {
                 in web development and project management.'
             />
             <CardItem
-              src='%PUBLIC_URL%/Images/sara.jpg'
+              src='images/sara.jpg'
               label='Tuyet Nhi Ngo'
               text="Frontend Engineer"
               paragraph='Currently pursuing a Bachelor in Computer Science degree 

@@ -1,14 +1,10 @@
 .discussion-panel {
-    margin-top: 2rem;
+    background-color: #8585A4;
     max-width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 2rem;
 }
 
 .text-start {
     text-align: center;
-    width: -moz-available;
     padding: 0 4rem;
 }
