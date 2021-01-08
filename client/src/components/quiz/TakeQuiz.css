@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1800px;
+    max-width: inherit;
 }
 
 .text-start > h2 {
@@ -62,7 +62,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .text-start > h2 { 
     text-align: center;
     margin: 2rem;
@@ -76,7 +76,7 @@
   .card-btn {
     max-width: 500px;
     text-align: center;
-    margin: 10px 50px;
+    margin: auto;
     display: flex;
     flex-direction: column;
   }
@@ -90,8 +90,16 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .card-btn {
+    margin: 10px 20px;
+    padding: 1rem 8rem;
+    width: inherit;
+  }
 
-@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 600px) {
   .card {
     min-width: 0;
     max-width: 80%;
@@ -101,5 +109,15 @@
     max-width: 300px;
     text-align: center;
     margin: 18px;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card-btn {
+    max-width: 300px;
+    text-align: center;
+    margin: 18px;
+    padding: 1rem 1rem;
   }
 }

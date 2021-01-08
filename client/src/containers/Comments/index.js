@@ -4,6 +4,7 @@ import API from "./../../components/API";
 import GoBackBtn from "./../../components/GoBackBtn";
 import {Button} from "./../../components/button/Button";
 import {animateScroll} from 'react-scroll';
+import './discussion.css';
 
 class Comments extends Component {
     state = {
@@ -57,7 +58,7 @@ class Comments extends Component {
     }
     render() {
         return (
-            <div className="text-white mx-5 px-5">
+            <div className="text-white">
                 <textarea
                 placeholder="Share your political view ..."
                 className="form-control"
