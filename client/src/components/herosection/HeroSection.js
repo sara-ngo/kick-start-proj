@@ -22,7 +22,7 @@ function HeroSection() {
           </Button>
         </Link>
 
-        <Link to='/About'>
+        <Link to='/AboutUs'>
           <Button
             className='btns'
             buttonStyle='btn--outline'
