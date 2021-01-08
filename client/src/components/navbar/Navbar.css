@@ -30,6 +30,10 @@
   align-items: center; 
 }
 
+.navbar-logo:hover {
+  color: #8585A4;
+}
+
 .fa-spider {
   margin-left: 0.5rem;
   font-size: 1.8rem;
@@ -64,6 +68,7 @@
 .nav-links:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
+  color: #8585A4;
 }
 
 .fa-bars {
