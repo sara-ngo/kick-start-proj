@@ -1,7 +1,9 @@
 .info {
-    padding: 4rem;
-    background: #fff;
-    margin: 0 200px 0 200px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background: #8585A4;
+    max-width: inherit;
+
 }
 
 .info__header {
@@ -11,29 +13,28 @@
     margin-bottom: 2rem;
 }
 
+.info__text {
+    margin: 0 400px;
+}
+
 .info__text > h3 {
-    color: #8585A4;
-    font-size: 18px;
-    line-height: 20px;
+    color: #ffffff;
 }
 
 .paragraph {
-    color: #8585A4;
-    font-size: 18px;
-    line-height: 20px;
+    margin: 2rem 0;
     color: #000;
-    text-align: center;
 }
+
+.paragraph > h4, a {
+    color: #3C3C6C;
+}
+
 
 
 @media screen and (max-width: 960px) {
     .info__text {
-        margin: 0 -100px 0 -100px;
+        margin: 0 100px 0 100px;
     }
   }
   
-  @media screen and (max-width: 768px) {
-    .info__text {
-      margin: 0 -100px 0 -100px;
-    }
-  }
