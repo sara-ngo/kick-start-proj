@@ -5,6 +5,7 @@ import Footer from '../footer/Footer';
 import About from '../about/About';
 
 function AboutUs() {
+  document.documentElement.scrollTop = 0; 
   return (
     <>
       <About />

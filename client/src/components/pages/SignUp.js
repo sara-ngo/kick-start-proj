@@ -5,7 +5,10 @@ import SignUpForm from '../membersportal/SignUpForm';
 import Footer from '../footer/Footer';
 import '../membersportal/SignUp.css';
 
+
 function SignUp() {
+  document.documentElement.scrollTop = 0; 
+
   return (
     <Router basename="/react-auth-ui/">
       <div className="App">
