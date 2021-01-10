@@ -60,7 +60,7 @@ class Comments extends Component {
         return (
             <div className="text-white">
                 <textarea
-                placeholder="Share your political view ..."
+                placeholder="Type here to share your political view"
                 className="form-control"
                 onChange={this.handleInputChange}
                 value={this.state.input}

@@ -7,7 +7,9 @@ const ListReply = (props) => {
                 if (item.comment_id === props.comment_id) {
                     return (
                         <div key={item.id}>
-                            <li className="list-group-item" style={{ backgroundColor: "rgb(143,147,202)"}}>{item.reply}</li>
+                            <ul>
+                                <li className="list-group-item" style={{ backgroundColor: "rgb(143,147,202)"}}>{item.reply}</li>
+                            </ul>
                         </div>
                     )
                 }

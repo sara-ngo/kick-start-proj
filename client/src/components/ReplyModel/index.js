@@ -31,7 +31,7 @@ class ReplyModel extends Component {
   render() {
     return (
       <>
-      <textarea placeholder="Write a reply ..." className="form-control" onChange={this.handleInputChange} value={this.state.value}/>
+      <textarea placeholder="Write a reply here" className="form-control" onChange={this.handleInputChange} value={this.state.value}/>
         <button className="btn float-right" style={{ backgroundColor: "rgb(143,147,202)"}}
         onClick={() => this.handleReply(this.state.comment_id, this.state.value)} >
           Reply
