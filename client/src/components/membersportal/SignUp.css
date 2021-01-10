@@ -136,3 +136,21 @@
   padding-bottom: 2px;
   margin-left: 5px;
 }
+
+@media screen and (max-width: 1024px) {
+  .App__Aside {
+    width: 35%;
+  }
+  .App__Form {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App__Aside {
+    width: 0%;
+  }
+  .App__Form {
+    width: 100%;
+  }
+}
