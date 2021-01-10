@@ -378,7 +378,7 @@ export default function Questions() {
     }
     return (
         <>
-            <div className="container" >
+            <div className="content" >
                 <div className="card">
                     {end ?
                         <div className="text-white">

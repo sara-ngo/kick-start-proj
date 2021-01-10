@@ -28,3 +28,19 @@ h1 {
     margin-right: 50px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .cards__item {
+    margin-bottom: 25px;
+  }
+
+  .cards__item__info {
+    width: 500px;
+    padding: 10px;
+  }
+
+  .cards__item__paragraph {
+    width: 65%;
+  }
+}
+

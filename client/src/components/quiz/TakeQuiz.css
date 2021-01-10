@@ -1,7 +1,7 @@
-.container {
+.container, content {
     background-color: #8585A4;
     height: 90vh;
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 0 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,27 +97,35 @@
     width: inherit;
   }
 
+  .button {
+    margin: 0.5rem;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    height: max-content;
+  }
+  .content {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+  }
+
   .card {
     min-width: 0;
-    max-width: 80%;
   }
 
   .card-btn {
     max-width: 300px;
     text-align: center;
     margin: 18px;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
   }
-}
-
-@media screen and (max-width: 300px) {
-  .card-btn {
-    max-width: 300px;
-    text-align: center;
-    margin: 18px;
-    padding: 1rem 1rem;
+  
+  .text-white {
+    width: 290px;
+    padding: 0;
   }
 }
