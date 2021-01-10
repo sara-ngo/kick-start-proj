@@ -1,7 +1,9 @@
 .info {
-    padding: 4rem;
-    background: #fff;
-    margin: 0 200px 0 200px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background: #8585A4;
+    max-width: inherit;
+
 }
 
 .info__header {
@@ -11,29 +13,34 @@
     margin-bottom: 2rem;
 }
 
+.info__text {
+    max-width: 1024px;
+    margin: auto;
+}
+
 .info__text > h3 {
-    color: #8585A4;
-    font-size: 18px;
-    line-height: 20px;
+    color: #ffffff;
 }
 
 .paragraph {
-    color: #8585A4;
-    font-size: 18px;
-    line-height: 20px;
+    margin: 2rem 0;
     color: #000;
-    text-align: center;
 }
 
+.paragraph > h4, a {
+    color: #3C3C6C;
+}
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
     .info__text {
-        margin: 0 -100px 0 -100px;
+        max-width: 800px;
+        margin: 0 100px;
     }
   }
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .info__text {
-      margin: 0 -100px 0 -100px;
+        max-width: 80%;
+        margin: auto;
     }
-  }
+}
