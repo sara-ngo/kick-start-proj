@@ -55,5 +55,6 @@
     }
     .btn {
         margin: 10px 0px;
+        width: fit-content;
     }
 }
