@@ -47,8 +47,8 @@
 
 @media screen and (max-width: 600px) {
     .text-white {
-        width: 500px;
-        margin: 0 20px;
+        width: 95%;
+        margin: auto;
     }
     .form-control {
         height: 150px;
