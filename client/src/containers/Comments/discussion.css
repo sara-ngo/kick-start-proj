@@ -16,7 +16,7 @@
 .text-white {
     padding: 0 4rem;
     text-align: center;
-    max-width: -moz-available;
+    max-width: inherit;
 }
 
 .btn {
