@@ -12,7 +12,7 @@ function HeroSection() {
       <p>Reveal your political leanings</p>
 
       <div className='hero-btns'>
-        <Link to='/SignUp'>
+        <Link to='/TakeQuiz'>
           <Button
             className='btns'
             buttonStyle='btn--primary'
