@@ -3,6 +3,7 @@
     max-width: inherit;
     max-height: max-content;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .text-start {
@@ -47,13 +48,14 @@
 
 @media screen and (max-width: 600px) {
     .text-white {
-        width: 500px;
-        margin: 0 20px;
+        width: 95%;
+        margin: auto;
     }
     .form-control {
         height: 150px;
     }
     .btn {
         margin: 10px 0px;
+        width: fit-content;
     }
 }
