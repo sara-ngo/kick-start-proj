@@ -141,7 +141,7 @@
 }
   
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 940px) {
   .cards {
     padding: 4rem 1rem;
   }
@@ -181,14 +181,15 @@
 
 @media only screen and (max-width: 500px) {
   .cards__item__link {
-    width: 250px;
+    width: 300px;
   }
 
   .cards__item__info {
-    width: 250px;
+    max-width: 300px;
   }
 
   .cards__item__paragraph {
+    width: 100%;
     font-size: 12pt;
   }
 }
