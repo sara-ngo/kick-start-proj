@@ -18,8 +18,7 @@ function Cards() {
                 in web development and project management.'
             />
             <CardItem
-              src='https://avatars2.githubusercontent.com/u/69872401?s=400&u=c32b8ed9ee5366b5d704410112985d028294e2ff&v=4'
-              label='Tuyet Nhi Ngo'
+              src='https://avatars1.githubusercontent.com/u/69872401?s=460&u=c4855852db639025c7199ed810d4bc7e26d8b580&v=4'              label='Tuyet Nhi Ngo'
               text="Frontend Engineer"
               paragraph='Currently pursuing a Bachelor in Computer Science degree 
               at San Jose State University. A junior student with focus on
