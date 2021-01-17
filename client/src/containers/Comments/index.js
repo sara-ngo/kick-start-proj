@@ -22,7 +22,6 @@ class Comments extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         if (this.state.input === "") {
-            console.log("work")
             alert("Your comment can't be empty.");
         } else {
             API.createComment({ comments:this.state.input }).then((res) => {
