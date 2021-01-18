@@ -363,6 +363,7 @@ export default function Questions() {
             setCurrentQuestion(nextQuestion);
         } else {
             var str = String(Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b));
+            if (str === "Peace"){str = "Peace and Freedom";}
             setResult(str);
             setEnd(true);
             console.log(result)
