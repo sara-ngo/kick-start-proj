@@ -390,9 +390,10 @@ export default function Questions() {
                             <h5>Alliance Party: {obj.Alliance}</h5>
                             <h5>Tea Party: {obj.Tea}</h5>
                             <h5>Green Party: {obj.Green}</h5>
-                            <h5>Peace and Freedom: {obj.Peace}</h5>
+                            <h5>Peace And Freedom Party: {obj.Peace}</h5>
                             <h5>Reform Party: {obj.Reform}</h5>
-                            <h3>The result shows that you should join {result} Party but the decision is your</h3>
+                            <h3>The party that aligns with your beliefs the most is The {result} Party, but how you vote is your decision.</h3> 
+                            <h4>Visit the resources page to find more information about this party</h4>
                             <div className="button">
                                 <Button buttonStyle='btn--form' onClick={again}>
                                     Try again
