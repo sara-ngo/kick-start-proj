@@ -20,12 +20,13 @@ cd kick-start-proj
 ```
 
 ## Features
+* Pass deployment
 * Survey Page - provides result after finishing all the questions
 * Discussion Page - comment and reply features
 * Support desktop and mobile environment
 
 
 ## Contributing
-[Gurveer Singh](https://github.com/Gurv33r) - Project Leader
-[Tuyet Ngo] (https://github.com/sara-ngo) - Frontend Engineer 
-[Hang Ho] (https://github.com/Hang-Ho) - Backend Engineer
+* [Gurveer Singh](https://github.com/Gurv33r) - Project Leader
+* [Tuyet Ngo] (https://github.com/sara-ngo) - Frontend Engineer 
+* [Hang Ho] (https://github.com/Hang-Ho) - Backend Engineer
