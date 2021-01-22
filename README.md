@@ -4,10 +4,10 @@ The purpose of this website is for informing users about the various political p
 Links: http://kickstart-political-quiz.herokuapp.com/
 
 ##### Built with
-*ReactJS
-*JavaScript
-*CSS
-*MySQL
+* ReactJS
+* JavaScript
+* CSS
+* MySQL
 
 ## Getting Started
 ##### Installation
@@ -20,9 +20,9 @@ cd kick-start-proj
 ```
 
 ## Features
-*Survey Page - provides result after finishing all the questions
-*Discussion Page - comment and reply features
-*Support desktop and mobile environment
+* Survey Page - provides result after finishing all the questions
+* Discussion Page - comment and reply features
+* Support desktop and mobile environment
 
 
 ## Contributing
