@@ -11,17 +11,16 @@ function TakeQuiz() {
     <>
       <div className="container">
         <div className="text-start">
-          <h2>***An account may required in order to take the quiz***</h2>
-          <h2>This quiz has 20 multiple choice questions which determines the political party that best suits your interests.
-          There is no time limited but please finish the quiz at one sitting since you can't resume your quiz after you quit. 
-          Give careful consideration to your answers because you can't go back to the previous question to change your answer. 
-          When you ready, click on "Let Start" button below to start your quiz.</h2>
+          <h2>***An account may be required in order to take the quiz***</h2>
+          <h2>Important: This quiz has 20 multiple choice questions. There is no time limit but you cannot resume your quiz after you quit, so try to do it in one sitting. 
+          All submissions are final, meaning you cannot go back to the previous question to change your answer. 
+          When you are ready, click the "Start" button below.</h2>
         </div>
         
         <div className="text-center">
           <Link to="/Quiz">
             <Button buttonStyle='btn--form' buttonSize='btn-medium'>
-              Let Start
+              Start
             </Button>
           </Link>
           <GoBackBtn />
