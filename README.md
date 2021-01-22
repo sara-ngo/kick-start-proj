@@ -2,6 +2,7 @@
 The purpose of this website is for informing users about the various political parties in the United States of America. The survey we created determines the political party that best suits a user’s interests by asking the user questions regarding prominent political issues and finding the best political party for them.
 
 Links: http://kickstart-political-quiz.herokuapp.com/
+![sneakpeak](theSpiders.jpg)
 
 ##### Built with
 * ReactJS
