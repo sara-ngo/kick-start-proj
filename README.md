@@ -28,5 +28,5 @@ cd kick-start-proj
 
 ## Contributing
 * [Gurveer Singh](https://github.com/Gurv33r) - Project Leader
-* [Tuyet Ngo] (https://github.com/sara-ngo) - Frontend Engineer 
-* [Hang Ho] (https://github.com/Hang-Ho) - Backend Engineer
+* [Tuyet Ngo](https://github.com/sara-ngo) - Frontend Engineer 
+* [Hang Ho](https://github.com/Hang-Ho) - Backend Engineer
